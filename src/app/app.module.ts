@@ -5,24 +5,29 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
-import { MatFormFieldModule } from '@angular/material';
-import { MatInputModule } from '@angular/material/input';
+// import {MatToolbarModule} from '@angular/material/toolbar';
+// import {MatIconModule} from '@angular/material/icon';
+// import {MatButtonModule} from '@angular/material/button';
+// import {MatSidenavModule} from '@angular/material/sidenav';
+// import {MatAutocompleteModule} from '@angular/material/autocomplete';
+// import { MatFormFieldModule } from '@angular/material';
+// import { MatInputModule } from '@angular/material/input';
+import { GamersDetailsComponent } from './gamers-details/gamers-details.component';
+import { HeaderComponent } from './header/header.component';
+// import {MatChipsModule} from '@angular/material/chips';
+import {MaterialExampleModule} from '../material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    GamersDetailsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,BrowserAnimationsModule,
-    AppRoutingModule,MatAutocompleteModule,
-    NgbModule,MatToolbarModule,MatIconModule,
-    MatButtonModule,MatSidenavModule,MatFormFieldModule,MatInputModule
+    AppRoutingModule,
+    NgbModule,MaterialExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
