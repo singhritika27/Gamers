@@ -5,8 +5,8 @@ import { GamersDetailsComponent } from './gamers-details/gamers-details.componen
 import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
-  {path:'',component:DashboardComponent},
-  // { path:'', component:HeaderComponent},
+  // {path:'',component:DashboardComponent},
+  { path:'', component:HeaderComponent},
   {path:'gamers-details', component:GamersDetailsComponent}
 ];
 
